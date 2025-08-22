@@ -1,25 +1,18 @@
 @charset "UTF-8";
 
 body {
-    /* 背景色 */
     background-color: #fff6f1;
 
-    /* 複数背景画像の指定 */
     background-image: url("images/haikei.jpg");
 
-    /* 背景の繰り返し */
     background-repeat: no-repeat;
 
-    /* 背景位置 */
     background-position: left top;
 
-    /* 背景サイズ */
     background-size: cover;
-    /* 右端画像を固定表示にする */
     background-attachment: scroll;
 }
 
-/* 文字関連 */
 .neighbor-info {
     font-size: 20px;
     font-weight: 200;
@@ -34,7 +27,7 @@ div p {
 h1 {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* 適切な値に修正 */
+    font-weight: 400; 
     font-style: normal;
     background-color: #dc8ba7;
     text-align: center;
@@ -48,7 +41,6 @@ th, td {
     background-color: #e1e1cd;
 }
 
-/* 画像クラス */
 .yamazoe00 {
     width: 400px;
     height: auto;
@@ -64,6 +56,7 @@ th, td {
 }
 
 .sel1 {
+    display:flex;
     justify-content:center;
 }
 
@@ -81,4 +74,133 @@ th, td {
 
 .selpicture li{
     flex: 1;
+}
+
+.aisatu h2 {
+    background: #dc8ba7;
+    margin-top:30px;
+    color:bisque;
+    margin-bottom:0;
+    padding-left:50%;
+}
+
+.aisatu p{
+    background: #dc8ba7;
+    color:bisque;
+    margin-top:0;
+    padding-left:50%;
+}
+
+/*人物の紹介写真*/
+.shokai1 ul{
+    list-style: none;
+    display :flex;
+    justify-content: center;
+    margin:15px 0 0 0;
+    gap:10px;
+    padding:0;
+}
+
+.shokai1 li{
+    
+}
+
+.shokai1 img{
+    width:300px;
+    height:250px;
+    display:block;
+    margin:0 auto;
+}
+
+.shokai1 p{
+    font-size: 22px;
+    text-align: center;
+   color:black; 
+   margin-top:5px;
+   font-family: serif;
+}
+
+.shokai2 ul{
+    list-style: none;
+    display :flex;
+    justify-content: center;
+    margin:15px 0 0 0;
+    gap:10px;
+    padding:0;
+}
+
+.shokai2 li{
+    
+}
+
+.shokai2 img{
+    width:300px;
+    height:250px;
+    display:block;
+    margin:0 auto;
+}
+
+.shokai2 p{
+    font-size: 22px;
+    text-align: center;
+    color:black;
+    margin-top:5px;
+    font-family: serif;
+}
+
+.border {
+    border-bottom:2px dotted tomato;
+    display: flex;
+    justify-content: center;
+}
+
+.border p{
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.border2 {
+    border-width:4px;
+    border-style:groove;
+    border-color:tomato #cccccc orange burlywood;
+    display: flex;
+    justify-content: left;
+    margin-top:20px;
+}
+.list ul {
+    list-style-image: url(images/onpu.png);
+    list-style-position: inside;
+}
+
+.mokuzi ul{
+    list-style-type: square;
+    list-style-position: inside;
+    border-style:dotted;
+    background-color: #cccccc;
+    border-width:2px;
+    margin:0 auto;
+    padding-left:20px
+}
+
+.mokuzi {
+    display: flex;
+    justify-content: center;
+}
+
+.mokuzi li{
+    padding-right: 20px;
+}
+
+.item {
+    background:#0bd;
+    color:#ffffff;
+    margin:30px;
+    padding:10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
